@@ -22,18 +22,17 @@ const ThemeProviderContext = React.createContext<ThemeProviderState | undefined>
 
 export function ThemeProvider({
   children,
-  defaultTheme = 'system',
   storageKey = 'ui-theme',
 }: ThemeProviderProps) {
   const [theme, setThemeState] = React.useState<Theme>(() => {
     // Initialize from localStorage if available (client-side only)
     if (typeof window !== 'undefined') {
       const stored = localStorage.getItem(storageKey) as Theme | null;
-      if (stored && (stored === 'light' || stored === 'dark' || stored === 'system')) {
+      if (stored && (stored === 'light' || stored === 'dark')) {
         return stored;
       }
     }
-    return defaultTheme;
+    return 'light';
   });
   const [mounted, setMounted] = React.useState(false);
 
