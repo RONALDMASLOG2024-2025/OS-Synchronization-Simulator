@@ -328,8 +328,8 @@ export default function CigaretteSmokersSimulator() {
                     <strong>Problem Definition</strong>
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="bg-white dark:bg-slate-900">
-                  <div className="space-y-4">
+                <AccordionContent className="bg-white dark:bg-slate-900 p-6 max-h-[600px] overflow-y-auto">
+                  <div className="space-y-6 pb-2">
                     <div>
                       <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-purple-700 dark:text-purple-300">
                         📖 What is the Cigarette Smokers Problem?
@@ -481,8 +481,8 @@ export default function CigaretteSmokersSimulator() {
                     <strong>Solutions & Implementation</strong>
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="bg-white dark:bg-slate-900">
-                  <div className="space-y-4">
+                <AccordionContent className="bg-white dark:bg-slate-900 p-6 max-h-[600px] overflow-y-auto">
+                  <div className="space-y-6 pb-2">
                     <div>
                       <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-green-700 dark:text-green-300">
                         <Lightbulb className="w-5 h-5" />

@@ -443,8 +443,8 @@ export default function SleepingBarberSimulator() {
                     <strong>Problem Definition</strong>
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="bg-white dark:bg-slate-900">
-                  <div className="space-y-4">
+                <AccordionContent className="bg-white dark:bg-slate-900 p-6 max-h-[600px] overflow-y-auto">
+                  <div className="space-y-6 pb-2">
                     <div>
                       <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-blue-700 dark:text-blue-300">
                         📖 What is the Sleeping Barber Problem?
@@ -572,8 +572,8 @@ export default function SleepingBarberSimulator() {
                     <strong>Solutions & Implementation</strong>
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="bg-white dark:bg-slate-900">
-                  <div className="space-y-4">
+                <AccordionContent className="bg-white dark:bg-slate-900 p-6 max-h-[600px] overflow-y-auto">
+                  <div className="space-y-6 pb-2">
                     <div>
                       <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-green-700 dark:text-green-300">
                         <Lightbulb className="w-5 h-5" />
@@ -793,17 +793,17 @@ useEffect(() => {
                       </div>
                     </div>
 
-                    <div className="p-4 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-950/30 dark:to-yellow-950/30 rounded-lg border-2 border-amber-300 dark:border-amber-700">
-                      <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-amber-800 dark:text-amber-200">
+                    <div className="p-4 mb-4 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-950/30 dark:to-yellow-950/30 rounded-lg border-2 border-amber-300 dark:border-amber-700">
+                      <h4 className="font-semibold text-base mb-3 flex items-center gap-2 text-amber-800 dark:text-amber-200">
                         💡 Key Takeaways
                       </h4>
-                      <ul className="text-sm text-muted-foreground space-y-2 list-disc list-inside">
-                        <li>The Sleeping Barber Problem teaches fundamental concepts in concurrent programming and resource management</li>
-                        <li>Proper synchronization is critical - without it, race conditions and deadlocks will occur</li>
-                        <li>Multiple solution approaches exist (semaphores, monitors, message passing) - choose based on your platform</li>
-                        <li>Real-world applications are everywhere: servers, databases, operating systems, embedded systems</li>
-                        <li>Modern solutions often use higher-level abstractions (async/await, channels) built on these primitives</li>
-                        <li>Testing concurrent systems is challenging - simulators like this help visualize and understand behavior</li>
+                      <ul className="text-sm text-muted-foreground space-y-2.5 list-disc list-inside ml-1">
+                        <li className="leading-relaxed">The Sleeping Barber Problem teaches fundamental concepts in concurrent programming and resource management</li>
+                        <li className="leading-relaxed">Proper synchronization is critical - without it, race conditions and deadlocks will occur</li>
+                        <li className="leading-relaxed">Multiple solution approaches exist (semaphores, monitors, message passing) - choose based on your platform</li>
+                        <li className="leading-relaxed">Real-world applications are everywhere: servers, databases, operating systems, embedded systems</li>
+                        <li className="leading-relaxed">Modern solutions often use higher-level abstractions (async/await, channels) built on these primitives</li>
+                        <li className="leading-relaxed">Testing concurrent systems is challenging - simulators like this help visualize and understand behavior</li>
                       </ul>
                     </div>
                   </div>
