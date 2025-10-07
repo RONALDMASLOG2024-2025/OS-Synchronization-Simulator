@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Slider } from '@/components/ui/slider';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
 import { Play, Pause, RotateCcw, Cigarette, Leaf, FileText, Flame, Settings2, Zap, BookOpen, AlertTriangle, CheckCircle, Lightbulb, Code } from 'lucide-react';
 
